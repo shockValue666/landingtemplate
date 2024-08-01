@@ -1,6 +1,7 @@
 import { CheckCircle2 } from 'lucide-react'
 import { pricingOptions } from '@/constants'
 import React from 'react'
+import clsx from 'clsx'
 
 const Pricing = () => {
   return (
@@ -8,10 +9,10 @@ const Pricing = () => {
         <h2 className='text-3xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wider'>
             Pricing
         </h2>
-        <div className='flex flex-wrap'>
+        <div className='flex flex-wrap '>
             {pricingOptions.map((option,index)=>{
                 return (
-                    <div key={index} className='w-full sm:w-1/2 lg:w-1/3 p-2'>
+                    <div key={index} className='w-full sm:w-1/2 lg:w-1/3 p-2 flex flex-col items-center'>
                         <p className='text-4xl'>
                             {option.title}
                             {option.title === "Pro" && (<span className='bg-gradient-to-r from-orange-500 to-red-400 text-transparent bg-clip-text text-xl mb-4 ml-2'>
@@ -19,12 +20,16 @@ const Pricing = () => {
                             </span>)}
                         </p>
                         <p className='mb-8'>
-                            <span className='text-5xl mt-6 mr-2'>
+                            <span className={clsx('text-5xl mt-6 mr-2',
+                                option.title==="Enterprise" && "gap-y-4 "
+                            )}>
                                 {option.price}
                             </span>
-                            <span className='text-neutral-400 tracking-tight'>/Month</span>
+                            <span className={clsx('text-neutral-400 tracking-tight',
+                                option.title==="Enterprise" && "hidden"
+                            )}>/Month</span>
                         </p>
-                        <ul>
+                        <ul className=''>
                             {option.features.map((feature,index)=>{
                                 return (
                                     <li key={index} className='mt-8 flex items-center'>

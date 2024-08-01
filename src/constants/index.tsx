@@ -13,110 +13,111 @@ import user5 from "../../public/profile-pictures/user5.jpg";
 import user6 from "../../public/profile-pictures/user6.jpg";
 
 export const navItems = [
-  { label: "Features", href: "#" },
-  { label: "Workflow", href: "#" },
+  { label: "API Calls", href: "#" },
+  { label: "Payments Database", href: "#" },
+  { label: "Gambling Games", href: "#" },
   { label: "Pricing", href: "#" },
   { label: "Testimonials", href: "#" },
 ];
 
 export const testimonials = [
   {
-    user: "John Doe",
-    company: "Stellar Solutions",
+    user: "Alice Thompson",
+    company: "Crypto Solutions",
+    text: "SolanaTX transformed our transaction process. The API is incredibly easy to use and integrates seamlessly with our platform.",
     image: user1,
-    text: "I am extremely satisfied with the services provided. The team was responsive, professional, and delivered results beyond my expectations.",
   },
   {
-    user: "Jane Smith",
-    company: "Blue Horizon Technologies",
+    user: "Mark Evans",
+    company: "Blockchain Innovators",
+    text: "The payment database feature has been a game-changer for us. Real-time updates and advanced analytics have made managing transactions effortless.",
     image: user2,
-    text: "I couldn't be happier with the outcome of our project. The team's creativity and problem-solving skills were instrumental in bringing our vision to life",
   },
   {
-    user: "David Johnson",
-    company: "Quantum Innovations",
+    user: "Samantha Lee",
+    company: "GameHub",
+    text: "Offering provably fair gambling games through SolanaTX has significantly boosted user engagement on our platform.",
     image: user3,
-    text: "Working with this company was a pleasure. Their attention to detail and commitment to excellence are commendable. I would highly recommend them to anyone looking for top-notch service.",
   },
-  {
-    user: "Ronee Brown",
-    company: "Fusion Dynamics",
-    image: user4,
-    text: "Working with the team at XYZ Company was a game-changer for our project. Their attention to detail and innovative solutions helped us achieve our goals faster than we thought possible. We are grateful for their expertise and professionalism!",
-  },
-  {
-    user: "Michael Wilson",
-    company: "Visionary Creations",
-    image: user5,
-    text: "I am amazed by the level of professionalism and dedication shown by the team. They were able to exceed our expectations and deliver outstanding results.",
-  },
-  {
-    user: "Emily Davis",
-    company: "Synergy Systems",
-    image: user6,
-    text: "The team went above and beyond to ensure our project was a success. Their expertise and dedication are unmatched. I look forward to working with them again in the future.",
-  },
+  // {
+  //   user: "Ronee Brown",
+  //   company: "Fusion Dynamics",
+  //   text: "Working with the team at XYZ Company was a game-changer for our project. Their attention to detail and innovative solutions helped us achieve our goals faster than we thought possible. We are grateful for their expertise and professionalism!",
+  //   image: user4,
+  // },
+  // {
+  //   user: "Michael Wilson",
+  //   company: "Visionary Creations",
+  //   text: "I am amazed by the level of professionalism and dedication shown by the team. They were able to exceed our expectations and deliver outstanding results.",
+  //   image: user5,
+  // },
+  // {
+  //   user: "Emily Davis",
+  //   company: "Synergy Systems",
+  //   text: "The team went above and beyond to ensure our project was a success. Their expertise and dedication are unmatched. I look forward to working with them again in the future.",
+  //   image: user6,
+  // },
 ];
 
 export const features = [
   {
     icon: <BotMessageSquare />,
-    text: "Drag-and-Drop Interface",
+    text: "Coin Swaps",
     description:
-      "Easily design and arrange your VR environments with a user-friendly drag-and-drop interface.",
-  },
-  {
-    icon: <Fingerprint />,
-    text: "Multi-Platform Compatibility",
-    description:
-      "Build VR applications that run seamlessly across multiple platforms, including mobile, desktop, and VR headsets.",
+      "Instantly swap coins with our simple API call. Efficient and secure transactions made easy.",
   },
   {
     icon: <ShieldHalf />,
-    text: "Built-in Templates",
+    text: "Comprehensive Payment Records",
     description:
       "Jumpstart your VR projects with a variety of built-in templates for different types of applications and environments.",
   },
   {
-    icon: <BatteryCharging />,
-    text: "Real-Time Preview",
+    icon: <Fingerprint />,
+    text: "Real-Time Updates",
     description:
-      "Preview your VR application in real-time as you make changes, allowing for quick iterations and adjustments.",
+      "Stay up-to-date with real-time updates on all payment activities.",
+  },
+  {
+    icon: <BatteryCharging />,
+    text: "Advanced Analytics",
+    description:
+      "Gain insights into payment trends and user behavior with our advanced analytics tools.",
   },
   {
     icon: <PlugZap />,
-    text: "Collaboration Tools",
+    text: "Gambling Games",
     description:
-      "Work together with your team in real-time on VR projects, enabling seamless collaboration and idea sharing.",
+      "Offer your users a fair gaming experience with our provably fair gambling games API.",
   },
   {
     icon: <GlobeLock />,
-    text: "Analytics Dashboard",
+    text: "Seamless Integration",
     description:
-      "Gain valuable insights into user interactions and behavior within your VR applications with an integrated analytics dashboard.",
+      "Easily integrate our gambling games into your platform with minimal effort.",
   },
 ];
 
 export const checklistItems = [
   {
-    title: "Code merge made easy",
+    title: "Provably Fair Games",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Offer your users a fair gaming experience with our provably fair gambling games API.",
   },
   {
-    title: "Review code without worry",
+    title: "Swap any coin on Raydium",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Minimal transaction time, highly efficient and secure. Instantly swap coins with our simple API call.",
   },
   {
-    title: "AI Assistance to reduce time",
+    title: "Wide Variety of Games",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Choose from a wide range of gambling games, including slots, poker, and roulette.",
   },
   {
-    title: "Share work in minutes",
+    title: "Seamless Integration",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Easily integrate our gambling games into your platform with minimal effort.",
   },
 ];
 
@@ -125,30 +126,30 @@ export const pricingOptions = [
     title: "Free",
     price: "$0",
     features: [
-      "Private board sharing",
-      "5 Gb Storage",
-      "Web Analytics",
-      "Private Mode",
+      "Basic API access",
+      "1,000 transactions/month",
+      "Community support",
+      // "Private Mode",
     ],
   },
   {
     title: "Pro",
-    price: "$10",
+    price: "$50",
     features: [
-      "Private board sharing",
-      "10 Gb Storage",
-      "Web Analytics (Advance)",
-      "Private Mode",
+      "Advanced API access",
+      "10,000 transactions/month",
+      "Email Support",
+      // "Private Mode",
     ],
   },
   {
     title: "Enterprise",
-    price: "$200",
+    price: "Contact us",
     features: [
-      "Private board sharing",
-      "Unlimited Storage",
-      "High Performance Network",
-      "Private Mode",
+      "Unlimited API access",
+      "Dedicated Support",
+      "Custom Integrations",
+      // "Private Mode",
     ],
   },
 ];

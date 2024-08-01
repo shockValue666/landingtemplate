@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react'
 import logo from '../../public/images/logo.png'
+import hardbull from '../../public/images/hardbull.png'
 import { navItems } from '@/constants'
 import {Menu, X} from 'lucide-react';
 
@@ -16,8 +17,8 @@ const Navbar = () => {
       <div className='container px-4 mx-auto relative text-sm'>
         <div className='flex justify-between items-center'>
           <div className='flex items-center flex-shrink-0'>
-              <img src={logo.src} alt="logo" className='w-10 h-10 mr-2' />
-              <span className='text-xl tracking-tight'>VirtualR</span>
+              <img src={hardbull.src} alt="logo" className='w-10 h-10 mr-2 rounded-xl' />
+              <span className='text-xl tracking-tight'>HARDBULL</span>
           </div>
           <ul className='hidden lg:flex ml-14 space-x-12'>
             {navItems.map((item, index) => (
